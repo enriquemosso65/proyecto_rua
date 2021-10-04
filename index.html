@@ -63,7 +63,7 @@
         <!-- memership -->
         <div class="memberships" id="intro">
             <h1> Introducción</h1>
-            <p class="membership__desc"> Redacta tu introducción contestando a las siguientes preguntas</p>
+            <!-- <p class="membership__desc"> Redacta tu introducción contestando a las siguientes preguntas</p> -->
             <!-- <div class="membership__wrapper">
                 <div class="membership__card">
                     <div class="membership__title">
@@ -107,12 +107,17 @@
                 <div class=" text__intro"> 
                     <p >
                         <p></p>
-                            <p>1.	¿Qué es visión artificial?</p>
+                            <!-- <p>1.	¿Qué es visión artificial?</p>
                             <p>2.	¿Por qué crees que resulta importante para un robot poder ver y entender su entorno?</p>
                             <p>3.	¿Qué es la detección de bordes y cuál es su importancia?</p>
                             <p>4.	¿Qué es el modelo RGB de color?</p>
                             <p>5.	¿Qué es una derivada parcial?</p>
-                    </p>
+                    </p> -->
+                    <p>Retomando los temas que viste en clase, con la visión artificial podemos hacer que las computadoras puedan percibir y comprender el contenido de una imagen y con base en ello tomar una decisión especifica.</p>
+                    
+                    <p>Estas decisiones son el objetivo principal del uso de la visión artificial, por ejemplo: la visión artificial de un auto autónomo requiere analizar las imágenes y detectar en ellas todos los obstáculos para evitar un choque.  Este magnifico campo de la investigación se encuentra en diferentes áreas como en el Control de calidad, la Manufactura y Logística, solo por mencionar algunas.</p>
+                    
+                    <p>Pero ¿cómo es posible que una computadora tenga conocimiento del contenido en una imagen? La respuesta es sencilla, se debe aplicar una técnica llamada Detección de Bordes, la cual permite aislar elementos de una imagen y separarlos del fondo. Obteniendo de esta manera, el contorno de cada uno de ellos.  </p>
                 </div>
             </div>
             
@@ -156,6 +161,9 @@
                     <p>1.	Dentro de este manual utilizaremos la siguiente imagen  para realizar pruebas. Sin embargo, tú puedes utilizar la que gustes, siempre y cuando sea de extensión jpg.   </p>
                     <br>
                     <div class="w-richtext-align-center"><img src="./images/proyecto3/p3-1.png" class="img-fluid"   alt="Imagen-prueba"></div>
+                    <a class="p2" >  Ver en tamaño grande PRUEBA</a>
+                    <br>
+                    <br>
                     <p>2.- Como primer paso, deberás importar los siguientes módulos de Python mediante las primeras cuatro líneas de código. Posteriormente, mediante <i>plt.imread </i>se realiza la lectura tu <i>imagen.jpg</i>, la cual se almacena con el nombre de <i>imagen_original</i>. Es necesario que coloques el archivo de tu imagen dentro de la misma carpeta donde se encuentra el programa de Python. Mediante las dos últimas líneas de código se muestra en pantalla la imagen, lo que nos da certeza que en este momento ya se encuentra disponible para poder trabajar con ella. </p>
                             <figure class="w-richtext-align-center w-richtext-figure-type-image" >
                                 <div><img src="images/proyecto3/p3-2.png" class="img-fluid"   alt="Imagen-prueba" </div>
@@ -320,7 +328,29 @@
         
     
         <script src="./app.js"></script>
-        
+        <script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        <script>
+        const p2 = document.querySelector(".p2");
+        p2.addEventListener("click", () => {
+        const options = {
+            showCloseButton: true,
+            showConfirmButton:  false,
+            imageUrl: './images/proyecto3/p3-1.png',
+            imageHeight: 'auto',
+            width:"300%",
+            height:"300%",
+            backdrop: true,
+            background: '#0003',
+            showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+            }
+        };
+        Swal.fire(options);
+        })
+        </script>
     
 </body>
 </html>
