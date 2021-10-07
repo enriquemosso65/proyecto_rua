@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./s.css">
+</head>
+<body>
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#uno">UNO</a></li>
+            <li><a href="#dos">DOS</a></li>
+            <li><a href="#tres">TEES</a></li>
+            <li><a href="#cuatro">CUATRO</a></li>
+            <li><a href="#cinco">XXXX</a></li>
+            <li><a href="#seis">CCCC</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="uno">
+            <h1>hola</h1>
+        </section>
+        <section id="dos">
+            <h1>hola2</h1>
+        </section>
+        <section id="tres">
+            <h1>hol1222</h1>
+        </section>
+
+    </main>
+        
+
+    <script>
+        const toggle =document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'sidebar' && e.target.id !== 'toggle'){
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

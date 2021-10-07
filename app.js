@@ -43,20 +43,17 @@ window.onload = function() {
   document.addEventListener('scroll', onScroll, false);
 }
 
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar__logo');
-const body = document.querySelector('body');
+const toggle =document.getElementById('toggle');
+const sidebar = document.getElementById('sidebar');
 
-//display mobile menu
+document.onclick = function(e){
+    if(e.target.id !== 'sidebar' && e.target.id !== 'toggle'){
+        toggle.classList.remove('active');
+        sidebar.classList.remove('active');
+    }
+}
 
-const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-    body.classList.toggle('active');
-
-
-};
-menu.addEventListener('click', mobileMenu);
-
-console.log("work");
+toggle.onclick = function(){
+    toggle.classList.toggle('active');
+    sidebar.classList.toggle('active');
+}
