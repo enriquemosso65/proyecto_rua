@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--prueba gitdesktop-->
 <html lang="es">
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
@@ -13,16 +14,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-        
+
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
         <!--nav bar-->
-        
+
         <header id="header" class="header">
-             
+
             <nav class="navbar">
             <a href="/" class="navbar__logo">LOGO</a>
             <!-- <div class="navbar__toggle" id="mobile-menu">
@@ -30,7 +31,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div> -->
-             
+
             <div id="toggle"></div>
             <div id="sidebar">
                 <ul>
@@ -54,13 +55,13 @@
         </div>
         <!-- services -->
         <div class="services" id="obj">
-            
+
             <div class="services__container">
                 <div>
-                   
+
                     <!-- <p class="topline">features</p> -->
                     <h1 class="services__heading">Objetivo</h1>
-                     
+
                 </div>
                 <div>
                     <div>
@@ -112,10 +113,10 @@
                     </div>
                     <a href="" class="button">sign up</a>
                 </div>
-                
+
             </div> -->
             <div>
-                <div class=" text__intro"> 
+                <div class=" text__intro">
                     <p >
                         <p></p>
                             <!-- <p>1.	¿Qué es visión artificial?</p>
@@ -125,50 +126,50 @@
                             <p>5.	¿Qué es una derivada parcial?</p>
                     </p> -->
                     <p>Retomando los temas que viste en clase, con la visión artificial podemos hacer que las computadoras puedan percibir y comprender el contenido de una imagen y con base en ello tomar una decisión especifica.</p>
-                    
+
                     <p>Estas decisiones son el objetivo principal del uso de la visión artificial, por ejemplo: la visión artificial de un auto autónomo requiere analizar las imágenes y detectar en ellas todos los obstáculos para evitar un choque.  Este magnifico campo de la investigación se encuentra en diferentes áreas como en el Control de calidad, la Manufactura y Logística, solo por mencionar algunas.</p>
-                    
+
                     <p>Pero ¿cómo es posible que una computadora tenga conocimiento del contenido en una imagen? La respuesta es sencilla, se debe aplicar una técnica llamada Detección de Bordes, la cual permite aislar elementos de una imagen y separarlos del fondo. Obteniendo de esta manera, el contorno de cada uno de ellos.  </p>
                 </div>
             </div>
-            
+
         </div>
         <div class="memberships " style="background-color:  #E28837;" id="def" >
-            <h1> Definición del Problema</h1>            
+            <h1> Definición del Problema</h1>
             <div>
-                <div class=" text__intro" style="text-align: justify;  "> 
+                <div class=" text__intro" style="text-align: justify;  ">
                     <p>La visión por computadora es un área de la Inteligencia Artificial en la que se estudian algoritmos y estrategias que permiten a las máquinas ver y entender algunos de los aspectos del mundo que les rodea </p>
                     <p>En los últimos años han existido grandes avances, y actualmente existen muchos algoritmos que permiten a las computadoras entender el contenido de imágenes y videos. Por ejemplo, existen algoritmos para identificar los objetos que aparecen en una imagen, o detectar la presencia de rostros en una fotografía, e incluso reconocer su identidad.  </p>
                     <p>En este proyecto estudiaremos uno de los problemas más básicos de visión artificial, que es la detección de bordes de una imagen. Esto consiste en identificar la orilla o contorno de un objeto. Imagina que estás programando un robot para que agarre una manzana. Sería de gran utilidad para el robot conocer el contorno de dicha manzana. </p>
                 </div>
             </div>
-            
+
         </div>
-        
+
         <div class="services" id="req">
-            
+
             <div class="services__container">
                 <div>
-                   
+
                     <!-- <p class="topline">features</p> -->
                     <div>
                         <p class="text">
                             <p>1.- Como primer paso, necesitas instalar un IDE que te permita trabajar con lenguaje Python. Se recomienda utilizar Jupyter <a href="https://jupyter.org/try">https://jupyter.org/try </a> . En este documento, las capturas de pantalla muestran la programación realizada en Jupyter.   </p> <br>
                             <p>2.- También necesitas una imagen en formato jpg, la cual deberá tener el nombre imagen.jpg. </p>
                         </p>
-                    </div> 
-                     
+                    </div>
+
                 </div>
                 <div>
                     <h1 class="services__heading" style=" text-align: right;">Requerimientos</h1>
-                    
+
                 </div>
             </div>
         </div>
         <div class="memberships " style="background-color:  #E28837;"  id="pro">
-            <h1> Procedimiento</h1>            
+            <h1> Procedimiento</h1>
             <div>
-                <div class=" text__intro" style="text-align: justify;  "> 
+                <div class=" text__intro" style="text-align: justify;  ">
                     <p>1.	Dentro de este manual utilizaremos la siguiente imagen  para realizar pruebas. Sin embargo, tú puedes utilizar la que gustes, siempre y cuando sea de extensión jpg.   </p>
                     <br>
                     <div class="w-richtext-align-center"><img src="./images/proyecto3/p3-1.png" class="img-fluid"   alt="Imagen-prueba"></div>
@@ -185,7 +186,7 @@
                              import matplotlib.pyplot as plt
 
                              imagen_original = plt.imread("imagen.jpg")]
-                            </code_example>    
+                            </code_example>
                             <p>3.- Como siguiente paso, convertiremos la imagen de color a escala de grises. Para ello emplearemos la función <i>color.rgb2gray</i>. Nuevamente mostramos en pantalla la imagen resultante para estar seguros de que todo está funcionando de forma correcta. </p>
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-3.png" class="img-fluid"   alt="Imagen-prueba"></div>
@@ -233,20 +234,20 @@
                                 <figcaption> </figcaption>
                             </figure>
                             <p>Si queremos calcular el incremento entre dos de estas barras consecutivas haríamos lo siguiente:</p>
-                            <p class="formula"> 
+                            <p class="formula">
                                 \[m = {f(x_j,y)- f(x_i,y)\over  x_j-x_i}\]
                             </p>
                             <p>Ya que estamos manteniendo a la variable y como constante, entonces en realidad estamos calculando la derivada parcial con respecto a x de la función:</p>
-                            <p class="formula"> 
+                            <p class="formula">
                                 \[{\partial f(x,y)\over \partial x } = {f(x_j,y)- f(x_i,y)\over  x_j-x_i}\]
                             </p>
                             <p>Para este problema en específico, si siempre calculamos el incremento entre pixeles vecinos, entonces \[x_j-x_i=1\]</p>
                             <p>por lo que se obtiene:</p>
-                            <p class="formula"> 
+                            <p class="formula">
                                 \[{\partial f(x,y)\over \partial x } = {f(x_j,y)- f(x_i,y)}\]
                             </p>
                             <p>Finalmente, podemos expresar la derivada parcial con respecto a x por medio de Dx  y expresar a j en términos de i como j=i+1 considerando que siempre estamos trabajando con el píxel siguiente, con lo que obtenemos:</p>
-                            <p class="formula"> 
+                            <p class="formula">
                                 \[D_x = {f(x_{i+1},y)- f(x_i,y) }\]
                             </p>
                             <p>Con esta fórmula, podemos calcular el incremento en la intensidad entre un píxel y otro. El signo que se genera en la derivada nos indicaría si el cambio se da de claro a oscuro o viceversa. Sin embargo, para el problema de los bordes lo único que nos interesa sería la magnitud, por lo que estaríamos calculando el valor absoluto. </p>
@@ -256,7 +257,7 @@
                                 <figcaption> </figcaption>
                             </figure>
                             <p>7.- Siguiendo la misma lógica, ahora podemos calcular la derivada parcial con respecto a y en cada uno de los puntos, manteniendo a x como constante:</p>
-                            <p class="formula"> 
+                            <p class="formula">
                                 \[D_x = {f(x,y_{i+1})- f(x,y_i) }\]
                             </p>
                             <figure class="w-richtext-align-center w-richtext-figure-type-image">
@@ -275,16 +276,16 @@
                             </figure>
                 </div>
             </div>
-            
+
         </div>
         <div class="services" id="conc">
-            
+
             <div class="services__container">
                 <div>
-                   
+
                     <!-- <p class="topline">features</p> -->
                     <h1 class="services__heading">Reflexiones y conclusiones</h1>
-                     
+
                 </div>
                 <div>
                     <div>
@@ -312,9 +313,9 @@
                         <a href="" class="footer__link"> Dr. Arturo Rodriguez Garcia
 
                         </a>
-                         
-                        
-                    
+
+
+
                 </div>
             </div>
             <div class="footer__wrapper">
@@ -324,26 +325,26 @@
                         <a href="" class="footer__link"> Jesús Enrique Chimal Mosso
 
                         </a>
-                         
-                        
-                    
+
+
+
 
                 </div>
                 <div class="footer__links">
                     <h2 class="footer__title">titulo </h2>
                         <a href="" class="footer__link">  </a>
-                        
-                        
-                    
+
+
+
 
                 </div>
             </div>
-            
+
 
         </div>
 
-        
-    
+
+
         <script src="./app.js"></script>
         <script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
         <script>
@@ -368,7 +369,7 @@
         Swal.fire(options);
         })
         </script>
-         <script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script> 
-    
+         <script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+
 </body>
 </html>
