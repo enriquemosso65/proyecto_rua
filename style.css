@@ -43,32 +43,33 @@
 
 
 }
-.navbar__logo{
-    color: var(--white);
-    text-decoration: none;
-    padding-left:  1rem;
-    font-size: 1.5rem;
+.navbar__logo img{
+     
+    width: 60px;
+    position: fixed;
+    top: 0px;
+    left: 20px;
+
+
 }
-.navbar__link{
-    color: var(--white);
-    text-decoration: none;
-    padding: 0rem 1rem;
+.navbar p{
+     
+  
+    position: fixed;
+    top: 0px;
+    left: 100px;
+
+
 }
 
-.navbar__link:hover{
-    color:var(--gold);
-    
-}
+ 
+ 
 @media screen and (max-width: 768px){
     body.active{
         overflow-y: hidden;
         overflow-x: hidden;
     }
-    .navbar__link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+     
 
 .navbar__menu{
     display: grid;
@@ -212,13 +213,24 @@
     margin-right: 15%;
  
 }
+.contenedor_img{
+    border-style: dotted;
+    border-color: #ff0101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    width: 60%;
+     
+}
 .text__intro{
     margin-bottom: 3rem;
     font-size: clamp(1rem, 3vw,1rem);
     padding: 1rem;
     text-align: justify;
-    margin-left: 15% ;
-    margin-right: 15%;
+    margin-left: 8% ;
+    margin-right: 8%;
     font-family:  Poppins; 
 }
 .material-icons{
@@ -229,9 +241,17 @@
     .services__container{
         grid-template-columns: 1fr;
     }
+    .text__intro{
+        text-align: left;
+        margin-left: 0% ;
+        margin-right: 0%;
+         
+    }
 }
 
 /* membership */
+ 
+
 .memberships{
     background: var(--blue);
     color: var(--white);
@@ -294,6 +314,7 @@
         margin-bottom: 2rem;
     }
 }
+
 /* footer */
 .footer{
     padding: 5rem calc((100vw - 1100px)/2);
@@ -366,9 +387,7 @@
     }
 }
 
-.w-richtext-align-center  {
-    text-align: center;
-}
+ 
 .formula{
     position: relative;
     overflow-x:auto ;
