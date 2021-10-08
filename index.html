@@ -16,7 +16,7 @@
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 
 </head>
 <body>
@@ -175,15 +175,24 @@
             <h1> Procedimiento</h1>
             <div>
                 <div class=" text__intro" >
-                    <a href="./images/proyecto3/imagen.jpg" download > Download File</a>
+                    
                      
                     <p>1.	Dentro de este manual utilizaremos la siguiente imagen  para realizar pruebas. Sin embargo, tú puedes utilizar la que gustes, siempre y cuando sea de extensión jpg.   </p>
                     <br>
-                    <div class="contenedor_img ">
-                         
+                    <!-- <div class="contenedor_img ">
                         <img src="./images/proyecto3/imagen.jpg" class="imagen"   alt="Imagen-prueba">
+                    </div> -->
+                    <div class="contenedor_img ">
+                        <div class="image-box">
+                            <img src="./images/proyecto3/imagen.jpg" title="" alt="">
+                            <div class="text-box">
+                               <a href="./images/proyecto3/imagen.jpg" download ><i class="material-icons  ">download_for_offline </i></a>
+                            </div>
+                        </div>
                     </div>
-                    <a class="p2" >  Ver en tamaño grande PRUEBA</a>
+                        
+                 
+                
                     <br>
                     <br>
                     <p>2.- Como primer paso, deberás importar los siguientes módulos de Python mediante las primeras cuatro líneas de código. Posteriormente, mediante <i>plt.imread </i>se realiza la lectura tu <i>imagen.jpg</i>, la cual se almacena con el nombre de <i>imagen_original</i>. Es necesario que coloques el archivo de tu imagen dentro de la misma carpeta donde se encuentra el programa de Python. Mediante las dos últimas líneas de código se muestra en pantalla la imagen, lo que nos da certeza que en este momento ya se encuentra disponible para poder trabajar con ella. </p>
@@ -423,30 +432,9 @@
 
 
         <script src="./app.js"></script>
-        <script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
-        <script>
-        const p2 = document.querySelector(".p2");
-        p2.addEventListener("click", () => {
-        const options = {
-            showCloseButton: true,
-            showConfirmButton:  false,
-            imageUrl: './images/proyecto3/p3-1.png',
-            imageHeight: '350px',
-            width:"300%",
-            height:"100vh",
-            backdrop: true,
-            background: '#0003',
-            showClass: {
-            popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
-            popup: 'animate__animated animate__fadeOutUp'
-            }
-        };
-        Swal.fire(options);
-        })
-        </script>
-         <script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        
+        
+ 
 
 </body>
 </html>
