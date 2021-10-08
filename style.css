@@ -460,18 +460,20 @@
     list-style: none;
     display: inline-block;
     width: 100%;
-    padding: 10px 40px;
+    padding: 7% 40px;
 }
 #sidebar ul li:hover{
-    background: blue;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 #sidebar ul li a {
-    color: bisque;
+    color: var(--blue);
     text-decoration: none;
     font-size: 1.5rem;
     letter-spacing: 2px;
+    
 }
-
+ 
 /* image hover */
  
  
