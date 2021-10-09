@@ -174,10 +174,20 @@
 
 
 }
+.tabla{
+    margin-top: 50px;
+}
 .services__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
+
+}
+.tabla__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+     
 
 }
 .services__img{
@@ -190,6 +200,7 @@
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 0.5rem ;
+    font-size: 1rem;
 }
 .services__heading{
     margin-bottom: 1rem;
@@ -211,6 +222,13 @@
     text-align:justify;
     margin-left: 15% ;
     margin-right: 15%;
+ 
+}
+.text__table{
+    font-size: 1rem;
+    color:var(--text-color);
+    text-align:left;
+     
  
 }
 .contenedor_img{
@@ -526,3 +544,5 @@
        
     }
 }
+
+/* parlax */
