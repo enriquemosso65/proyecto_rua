@@ -101,7 +101,7 @@
                  
             </div>
         </div>
-         
+         <hr>
         <div class="services" id="obj">
 
             <div class="services__container">
@@ -214,7 +214,7 @@
         </div>
 
          
-        <div class="memberships " style="background-color:  #E28837;"  id="pro">
+        <div class="memberships " style="background-color:  #fff; color: rgb(36, 36, 36);"  id="pro">
             <h1> Procedimiento</h1>
             <div>
                 <div class=" text__intro" >
@@ -239,91 +239,112 @@
                     <br>
                     <br>
                     <p>2.- Como primer paso, deberás importar los siguientes módulos de Python mediante las primeras cuatro líneas de código. Posteriormente, mediante <i>plt.imread </i>se realiza la lectura tu <i>imagen.jpg</i>, la cual se almacena con el nombre de <i>imagen_original</i>. Es necesario que coloques el archivo de tu imagen dentro de la misma carpeta donde se encuentra el programa de Python. Mediante las dos últimas líneas de código se muestra en pantalla la imagen, lo que nos da certeza que en este momento ya se encuentra disponible para poder trabajar con ella. </p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image" >
-                                <div><img src="images/proyecto3/p3-2.png" class="img-fluid"   alt="Imagen-prueba" </div>
-                                <figcaption> </figcaption>
-                            </figure>
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             import numpy as np
-                             import matplotlib.pyplot as plt
-                             from skimage import color
-                             from skimage import io
-
-                             imagen_original = plt.imread("imagen.jpg) 
-                             plt.imshow(imagen_original)
-                             plt.show()
+                                import numpy as np
+                                import matplotlib.pyplot as plt
+                                from skimage import color
+                                from skimage import io
+                                
+                                imagen_original = plt.imread("imagen.jpg") 
+                                plt.imshow(imagen_original)
+                                plt.show()
                             </code_example>
+                            <br>
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/1.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>3.- Como siguiente paso, convertiremos la imagen de color a escala de grises. Para ello emplearemos la función <i>color.rgb2gray</i>. Nuevamente mostramos en pantalla la imagen resultante para estar seguros de que todo está funcionando de forma correcta. </p>
-                            <figure class="images">
+                            <!-- <figure class="images">
                                 <div><img src="images/proyecto3/p3-3.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             imagen = color.rgb2gray(imagen_original)
-                             plt.imshow(imagen,cmap='gray')
-                             plt.show
+                                imagen = color.rgb2gray(imagen_original)
+                                plt.imshow(imagen,cmap='gray')
+                                plt.show()
                             </code_example>
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/2.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>4.- Para conocer el tamaño de la imagen podemos hacerlo de la siguiente forma. El primer valor corresponde al ancho, y el segundo al largo. </p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-4.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             print(imagen.shape)
-                             (697, 1045)
+                                print(imagen.shape)
                             </code_example>
+                            <br>
                             <p>5.- El ancho y el largo de la imagen con la que estamos trabajando son dos datos que nos serán de gran utilidad en los siguientes pasos. Por ello será conveniente almacenarlas en dos variables por separado de la siguiente forma. Para verificar que lo hicimos de forma correcta, imprimimos el valor de las variables.</p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-5.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             ancho = imagen.shape[0]
-                             largo = imagen.shape[1]
-                             
-                             print(ancho)
-                             print(largo)
-                             
-                             697
-                             1045
+                                ancho = imagen.shape[0]
+                                largo = imagen.shape[1]
+                                                             
+                                print(ancho)
+                                print(largo)
                             </code_example>
+                            <br>
                             <p>6.- En este momento resulta importante entender la estructura de la imagen con la que estamos trabajando. La imagen es una matriz de 697 renglones y 1045 columnas. Cada elemento de la matriz corresponde a un píxel, cuyo valor corresponde a la intensidad de gris que le corresponde, con un valor en el intervalo [0,1], donde el 0 corresponde a negro y el 1 a blanco. Resulta importante tener cuidado que la manera en que funcionan las coordenadas de la imagen no corresponde a como estamos acostumbrados usualmente en el sistema de ejes coordenados. Observe en la siguiente figura cómo funciona en este caso. Asignaremos la variable x para referirnos al renglón y la variable y para referirnos a la columna de la imagen. </p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-6.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/p3-6.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>Podemos mandar a imprimir el valor de algunos de los pixeles de nuestro arreglo. </p>
-                            
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <br>
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-7.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             print(imagen[100][200])
-                             print(imagen[500][600])
-                             print(imagen[650][1000])
+                                print(imagen[100][200])
+                                print(imagen[500][600])
+                                print(imagen[650][1000])
                             </code_example>
+                            <br>
                             <p>Comparando con la imagen, nos damos cuenta de que el valor del punto corresponde a una zona de color casi blanco, el segundo punto a una zona casi negra, y el tercer punto a una zona gris. Las tres coordenadas elegidas se muestran de forma aproximada en la siguiente figura.</p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-8.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/p3-8.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>Resulta también muy importante entender que la imagen es una función f(x,y) cuyas variables independientes son el valor del renglón y columna de la matriz, y cuya variable dependiente es el color correspondiente a dicho píxel en un intervalo [0,1].</p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-9.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/p3-9.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>Suponga que se tiene esta imagen y analizamos la columna y=2. Con el valor de cada uno de los pixeles creamos una barra con una altura proporcional a su valor. Recuerde que entre más negro sea el píxel, su valor es más cercano es cero y por lo tanto tendremos una altura menor. Por otra parte, entre más blanco sea un píxel su valor será más cercano a uno, y por lo tanto tendremos una altura mayor de su correspondiente barra. En la siguiente figura vemos al lado derecho la reconstrucción con barras de la columna y=2. Dicho de otra forma, vemos lo que ocurre cuando mantenemos constante a la variable y, y únicamente trabajamos con la variable x. </p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-10.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/p3-10.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>De la figura podemos ver que un cambio significativo de tonalidades genera un salto significativo entre el tamaño de las barras. Esto ocurre frecuentemente en los bordes de las imágenes y será la clave para identificarlos. </p>
                             <p>En este caso, podemos detectar bordes cuando nos desplazamos sobre una línea paralela al eje x (manteniendo constante el valor de y). </p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-11.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/p3-8.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>Si queremos calcular el incremento entre dos de estas barras consecutivas haríamos lo siguiente:</p>
                             <p class="formula">
                                 \[m = {f(x_j,y)- f(x_i,y)\over  x_j-x_i}\]
@@ -343,66 +364,83 @@
                             </p>
                             <p>Con esta fórmula, podemos calcular el incremento en la intensidad entre un píxel y otro. El signo que se genera en la derivada nos indicaría si el cambio se da de claro a oscuro o viceversa. Sin embargo, para el problema de los bordes lo único que nos interesa sería la magnitud, por lo que estaríamos calculando el valor absoluto. </p>
                             <p>Transformando las ideas anteriores en código obtenemos:</p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-12.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             dx=np.zeros(shape=(ancho,largo))
+                                dx=np.zeros(shape=(ancho,largo))
                              
-                             for i in range(0,ancho-1):
-                                 for j in range(0,largo-1):
-                                     dx[i][j]= abs(imagen[i+1][j] - imagen[i][j])
-                                     
-                            plt.imshow(dx,cmap='gray')
-                            plt.show()
+                                for i in range(0,ancho-1):
+                                    for j in range(0,largo-1):
+                                        dx[i][j]= abs(imagen[i+1][j] - imagen[i][j])
+                                plt.imshow(dx,cmap='gray')
+                                plt.show()
                             </code_example>
+                            <br>
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/3.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>7.- Siguiendo la misma lógica, ahora podemos calcular la derivada parcial con respecto a y en cada uno de los puntos, manteniendo a x como constante:</p>
                             <p class="formula">
                                 \[D_x = {f(x,y_{i+1})- f(x,y_i) }\]
                             </p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-13.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             dx=np.zeros(shape=(ancho,largo))
+                                dy=np.zeros(shape=(ancho,largo))
                              
-                             for i in range(0,ancho-1):
-                                 for j in range(0,largo-1):
-                                     dy[i][j]= abs(imagen[i+1][j] - imagen[i][j])
-                                     
-                            plt.imshow(dy,cmap='gray')
-                            plt.show()
+                                for i in range(0,ancho-1):
+                                    for j in range(0,largo-1):
+                                        dy[i][j]= abs(imagen[i][j+1] - imagen[i][j])
+                                                                     
+                                plt.imshow(dy,cmap='gray')
+                                plt.show()
                             </code_example>
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/4.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>8.- Resultaría conveniente juntar la información de ambas derivadas parciales. Procedemos a calcular el gradiente.</p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-14.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             gradiente=np.zeros(shape=(ancho,largo))
+                                gradiente=np.zeros(shape=(ancho,largo))
                              
-                             for i in range(0,ancho):
-                                 for j in range(0,largo):
-                                     gradiente[i][j]= dx([i][j] + dy[i][j])
-                                     
-                            plt.imshow(gradiente,cmap='gray')
-                            plt.show()
+                                for i in range(0,ancho):
+                                    for j in range(0,largo):
+                                        gradiente[i][j]= dx[i][j] + dy[i][j]
+                                                                     
+                                plt.imshow(gradiente,cmap='gray')
+                                plt.show()
                             </code_example>
+                            <br>
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/5.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                             <p>9.- Los bordes de la imagen pueden resultar más visibles si invertimos los colores.</p>
-                            <figure class="w-richtext-align-center w-richtext-figure-type-image">
+                            <!-- <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                 <div><img src="images/proyecto3/p3-15.png" class="img-fluid"   alt="Imagen-prueba"></div>
                                 <figcaption> </figcaption>
-                            </figure>
+                            </figure> -->
+                            <br>
                             <code_example title="CÓDIGO FUENTE" lang="py">
-                             for i in range(0,ancho):
-                                 for j in range(0,largo):
-                                     gradiente[i][j]= 1 - gradiente[i][j]
-                                     
+                                for i in range(0,ancho):
+                                for j in range(0,largo):
+                                    gradiente[i][j]= 1 - gradiente[i][j]
+                                                                 
                             plt.imshow(gradiente,cmap='gray')
                             plt.show()
                             </code_example>
+                            <br>
+                            <div class="contenedor_img ">
+                                <img src="./images/proyecto3/6.png" class="imagen"   alt="Imagen-prueba">
+                            </div>
                 </div>
             </div>
 
