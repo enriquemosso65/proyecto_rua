@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./hl.css">
+    <link rel="stylesheet" href="./game.css">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
     
 
@@ -447,6 +448,62 @@
             </div>
 
         </div>
+        <div class="container3">
+            <div id="game" class="games"> 
+                <!-- class justify-center flex-column -->
+                <div id="hud">
+                    <div class="hud-item">
+                        <p id="progressText" class="hud-prefix">
+                            Pregunta
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                    </div>
+                    <div class="hud-item">
+                        <p class="hud-prefix">
+                            Puntos
+                        </p>
+                        <h1 class="hud-main-text" id="score">
+                            0
+                        </h1>
+                    </div>
+                </div>
+                <h1 id="question">What is the answer to this question</h1>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+        <div id="end" class="flex-center flex-column">
+                <form class="end-form-container">
+                    <h2 id="end-text">Obtuviste la siguiente puntuación: </h2>
+                    <h1 id="finalScore">0 </h1> 
+                     
+                     
+                </form>
+                
+                
+                
+                
+                <a href="./game.html" class="btn">Intentar de nuevo</a>
+                <a href="./index.html" class="btn">Inicio<i class=" "></i></a>
+            </div>
         <div class="services" id="conc">
 
             <div class="services__container">
@@ -516,6 +573,7 @@
 
     <script src="./app.js"></script>
     <script src="./hl.js"></script>
+    <script src="./game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <!-- <link href="https://browser-tools.lazydb.com/code_example/code_example.css" rel="stylesheet"> -->
     <!-- <script src="https://browser-tools.lazydb.com/code_example/code_example.js"></script> -->
