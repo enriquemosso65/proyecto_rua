@@ -29,11 +29,11 @@ let questions = [
         answer: 2,
     },
     {
-        question: "¿Son aplicaciones de  la detección de bordes, excepto?",
-        choice1: "xxxx",
-        choice2: "xxxx",
-        choice3: "xxxx",
-        choice4: "xxxx",
+        question: "¿Cuál es la función del método: “plt.imread”?",
+        choice1: "Permite agregar la imagen al proyecto",
+        choice2: "Descarga la imagen del proyecto ",
+        choice3: "Se muestra la imagen en el proyecto",
+        choice4: "Cambia la imagen a blanco y negro ",
         answer: 1,
     },
     {
