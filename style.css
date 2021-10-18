@@ -5,6 +5,7 @@
     --white: #fff;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 *{
     box-sizing: border-box;
     
@@ -506,6 +507,7 @@ body{
     text-decoration: none;
     font-size: 1.5rem;
     letter-spacing: 2px;
+    width: 100%;
     
 }
  
@@ -554,12 +556,39 @@ body{
 .image-box:hover img {
     transform: scale(1.2)
 }
+.title__cuestion  {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.title__cuestion h1  {
+    color: var(--text-color);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+.title__cuestion h2  {
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 @media screen and (max-width: 768px){
     .text-box {
         
         width: 50%;
        
     }
+    .title__cuestion h2  {
+       
+        font-size:1rem;
+       
+    }
+    .text{
+        font-size: 1.2rem;
+        color:var(--text-color);
+        text-align:left;
+        
+     
+    }
 }
 
-/* parlax */
+

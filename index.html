@@ -41,6 +41,7 @@
                     <li><a href="#def">DEFINICION DEL PROBLEMA</a></li>
                     <li><a href="#req">REQUERIMIENTOS</a></li>
                     <li><a href="#pro">PROCEDIMIENTO</a></li>
+                    <li><a href="#cues">CUESTIONARIO</a></li>
                     <li><a href="#conc">REFLEXIONES Y CONCLUSIONES</a></li>
                 </ul>
             </div>
@@ -178,7 +179,7 @@
                     </p> -->
                     <p>Retomando los temas que viste en clase, con la visión artificial podemos hacer que las computadoras puedan percibir y comprender el contenido de una imagen y con base en ello tomar una decisión especifica.</p>
 
-                    <p>Estas decisiones son el objetivo principal del uso de la visión artificial, por ejemplo: la visión artificial de un auto autónomo requiere analizar las imágenes y detectar en ellas todos los obstáculos para evitar un choque.  Este magnifico campo de la investigación se encuentra en diferentes áreas como en el Control de calidad, la Manufactura y Logística, solo por mencionar algunas.</p>
+                    <p>Estas decisiones son el objetivo principal del uso de la visión artificial, por ejemplo: la visión artificial de un automóvil autónomo requiere analizar las imágenes y detectar en ellas todos los obstáculos para evitar un choque.  Este magnifico campo de la investigación se encuentra en diferentes áreas como en el Control de calidad, la Manufactura y Logística, solo por mencionar algunas.</p>
 
                     <p>Pero ¿cómo es posible que una computadora tenga conocimiento del contenido en una imagen? La respuesta es sencilla, se debe aplicar una técnica llamada Detección de Bordes, la cual permite aislar elementos de una imagen y separarlos del fondo. Obteniendo de esta manera, el contorno de cada uno de ellos.  </p>
                 </div>
@@ -448,7 +449,10 @@
             </div>
 
         </div>
-        <div class="container3">
+        <div class="title__cuestion" id="cues">
+            <h1>Cuestionario</h1>
+        </div>
+        <div class="container3" id="divi">
             <div id="game" class="games"> 
                 <!-- class justify-center flex-column -->
                 <div id="hud">
@@ -487,12 +491,16 @@
                     <p class="choice-text" data-number="4">Choice 4</p>
                 </div>
             </div>
-            <hr>
+           
             
         </div>
-        <div id="end" class="flex-center flex-column">
-                <form class="end-form-container">
-                    <h2 id="end-text">Obtuviste la siguiente puntuación: </h2>
+ 
+        <div id="end" class="flex-center flex-column puntuacion">
+                <form class="end-form-container" id="ending">
+                    <div class="title__cuestion">
+                        <h2>Obtuviste la siguiente puntuación:</h2>
+                    </div>
+                    <h2 id="end-text"> </h2>
                     <h1 id="finalScore">0 </h1> 
                      
                      
@@ -504,6 +512,7 @@
                 <!-- <a href="./game.html" class="btn">Intentar de nuevo</a>
                 <a href="./index.html" class="btn">Inicio<i class=" "></i></a> -->
             </div>
+            
         <div class="services" id="conc">
 
             <div class="services__container">

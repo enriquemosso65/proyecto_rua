@@ -67,9 +67,11 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-
-      
-        document.getElementById('finalScore').innerHTML = score + 'hola';
+        const div =  document.getElementById('divi')
+            div.classList.remove('container3')
+            div.innerHTML=""
+            document.getElementById('ending').style.display = 'flex'
+        document.getElementById('finalScore').innerHTML = score 
     }
 
     questionCounter++
