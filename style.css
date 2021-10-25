@@ -256,7 +256,9 @@ body{
     align-items: center;
 }
 .imagen{
-    width: 60%;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
      
 }
 .text__intro{
