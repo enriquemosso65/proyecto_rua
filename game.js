@@ -54,7 +54,7 @@ let questions = [
     },
 ]
 
-const SCORE_POINTS = 100
+const SCORE_POINTS = 1
 const MAX_QUESTIONS = 5
 
 startGame = () => {
@@ -71,7 +71,7 @@ getNewQuestion = () => {
             div.classList.remove('container3')
             div.innerHTML=""
             document.getElementById('ending').style.display = 'flex'
-        document.getElementById('finalScore').innerHTML = score 
+        document.getElementById('finalScore').innerHTML = score +' '+ '/ 5'
     }
 
     questionCounter++
