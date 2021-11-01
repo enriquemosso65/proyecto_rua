@@ -101,12 +101,13 @@ body{
     font-size: clamp(1rem, 4vw, 1.5rem);
     margin-bottom: 3rem;
 }
-.text{
-    font-size: 20px;
-    color:var(--text-color);
-    text-align:justify;
-    margin-left: 15% ;
-    margin-right: 15%;
+.text__cont{
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 3vw,1rem);
+    padding: 1rem;
+    text-align: left;
+    font-family:  Poppins; 
+    line-height: 150%;
 }
 .button{
     padding: 1rem 3rem;
@@ -161,7 +162,12 @@ body{
 .objetivos__heading{
     margin-bottom: 1rem;
     font-size: clamp(2rem, 6vw, 3rem);
+    margin-left: 25%;
 }
+/* .objetivos__text{
+    margin-left: -20%;
+} */
+ 
 /* !introduccion */
  
 
@@ -183,6 +189,7 @@ body{
     margin-left: 8% ;
     margin-right: 8%;
     font-family:  Poppins; 
+    line-height: 150%;
 }
 /* !contenedores centrales */
 .contenedor-central{
@@ -232,8 +239,12 @@ body{
     .objetivos__container{
         grid-template-columns: 1fr;
     }
+    .objetivos__heading{
+        margin-left: 0%;
+    }
     .objetivos__text{
         margin-top: 1.5rem;
+        margin-left: 0%;
     }
     .text__intro{
         text-align: left;
