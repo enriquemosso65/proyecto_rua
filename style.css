@@ -14,13 +14,7 @@
 body{
     background-color: var(--white);
 }
-.text{
-    font-size: 20px;
-    color:var(--text-color);
-    text-align:justify;
-    margin-left: 15% ;
-    margin-right: 15%;
-}
+
 /* !progress indicator */
 #_progress {
     --scroll: 0%;
@@ -107,6 +101,13 @@ body{
     font-size: clamp(1rem, 4vw, 1.5rem);
     margin-bottom: 3rem;
 }
+.text{
+    font-size: 20px;
+    color:var(--text-color);
+    text-align:justify;
+    margin-left: 15% ;
+    margin-right: 15%;
+}
 .button{
     padding: 1rem 3rem;
     border: none;
@@ -162,23 +163,8 @@ body{
     font-size: clamp(2rem, 6vw, 3rem);
 }
 /* !introduccion */
-
-
  
 
-.requerimientos{
-    padding: 8rem calc((100vw - 1200px)/2);
-    background-color: var(--white);
-}
-.requerimientos__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
-}
-.requerimientos__heading{
-    margin-bottom: 1rem;
-    font-size: clamp(2rem, 6vw, 3rem); 
-}
 .contenedor_img{
     display: flex;
     justify-content: center;
@@ -209,6 +195,19 @@ body{
     margin-bottom: 1rem;
     font-size: clamp(2rem, 5vw,3rem);
     padding: 0 1rem;
+}
+.requerimientos{
+    padding: 8rem calc((100vw - 1200px)/2);
+    background-color: var(--white);
+}
+.requerimientos__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+.requerimientos__heading{
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem); 
 }
 .conclusiones{
     padding: 8rem calc((100vw - 1200px)/2);
