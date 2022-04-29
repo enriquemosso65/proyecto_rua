@@ -36,7 +36,6 @@
             </nav>
         </header>
         <div id="_progress"></div>
-         
             <!-- hero section -->
             <div class="hero">
                 <div class="hero__content">
@@ -145,7 +144,7 @@
                             </div>
                         </div>
                         <br>
-                        <br>
+                        <p class="img_descripcion"> <strong> Fig. 2.2.1</strong>  Imagen sugerida  </p>
                         <p>2.- Como primer paso, deberás importar los siguientes módulos de Python mediante las primeras cuatro líneas de código. Posteriormente, mediante <i>plt.imread </i>se realiza la lectura tu <i>imagen.jpg</i>, la cual se almacena con el nombre de <i>imagen_original</i>. Es necesario que coloques el archivo de tu imagen dentro de la misma carpeta donde se encuentra el programa de Python. Mediante las dos últimas líneas de código se muestra en pantalla la imagen, lo que nos da certeza que en este momento ya se encuentra disponible para poder trabajar con ella. </p>
                                 <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
@@ -162,6 +161,7 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/1.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.2</strong>  Imagen representada en un plano cartesiano    </p>
                                 <p>3.- Como siguiente paso, convertiremos la imagen de color a escala de grises. Para ello emplearemos la función <i>color.rgb2gray</i>. Nuevamente mostramos en pantalla la imagen resultante para estar seguros de que todo está funcionando de forma correcta. </p>
                                 <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
@@ -172,6 +172,7 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/2.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.3</strong>  Imagen después de aplicar el filtro de escala de grises  </p>
                                 <p>4.- Para conocer el tamaño de la imagen podemos hacerlo de la siguiente forma. El primer valor corresponde al ancho, y el segundo al largo. </p>
                                 <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
@@ -192,6 +193,7 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/graficavacia.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.4</strong>  Matriz de pixeles    </p>
                                 <p>Podemos mandar a imprimir el valor de algunos de los pixeles de nuestro arreglo. </p>
                                 <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
@@ -204,19 +206,23 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/p3-8.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.5</strong>  Coordenadas que representan 3 tipos de color      </p>
                                 <p>Resulta también muy importante entender que la imagen es una función f(x,y) cuyas variables independientes son el valor del renglón y columna de la matriz, y cuya variable dependiente es el color correspondiente a dicho píxel en un intervalo [0,1].</p>
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/graficaejemplo.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.6</strong>  Matriz coloreada con diferentes pixeles       </p>
                                 <p>Suponga que se tiene esta imagen y analizamos la columna y=2. Con el valor de cada uno de los pixeles creamos una barra con una altura proporcional a su valor. Recuerde que entre más negro sea el píxel, su valor es más cercano es cero y por lo tanto tendremos una altura menor. Por otra parte, entre más blanco sea un píxel su valor será más cercano a uno, y por lo tanto tendremos una altura mayor de su correspondiente barra. En la siguiente figura vemos al lado derecho la reconstrucción con barras de la columna y=2. Dicho de otra forma, vemos lo que ocurre cuando mantenemos constante a la variable y, y únicamente trabajamos con la variable x. </p>
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/graficacomparativa.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.7</strong>  Agrupación de colores     </p>
                                 <p>De la figura podemos ver que un cambio significativo de tonalidades genera un salto significativo entre el tamaño de las barras. Esto ocurre frecuentemente en los bordes de las imágenes y será la clave para identificarlos. </p>
                                 <p>En este caso, podemos detectar bordes cuando nos desplazamos sobre una línea paralela al eje x (manteniendo constante el valor de y). </p>
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/demostracion.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.8</strong>  Representación del incremento de dos barras      </p>
                                 <p>Si queremos calcular el incremento entre dos de estas barras consecutivas haríamos lo siguiente:</p>
                                 <p class="formula">
                                     \[m = {f(x_j,y)- f(x_i,y)\over  x_j-x_i}\]
@@ -250,10 +256,12 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/3.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.9</strong>  Imagen después de aplicar el algoritmo    </p>
                                 <p>7.- Siguiendo la misma lógica, ahora podemos calcular la derivada parcial con respecto a y en cada uno de los puntos, manteniendo a x como constante:</p>
                                 <p class="formula">
                                     \[D_x = {f(x,y_{i+1})- f(x,y_i) }\]
                                 </p>
+                                <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
                                     dy=np.zeros(shape=(ancho,largo))
 
@@ -267,6 +275,7 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/4.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.10</strong>  Imagen después de aplicar la derivada parcial   </p>
                                 <p>8.- Resultaría conveniente juntar la información de ambas derivadas parciales. Procedemos a calcular el gradiente.</p>
                                 <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
@@ -283,6 +292,7 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/5.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.11</strong>  Imagen después de aplicar el gradiente </p>
                                 <p>9.- Los bordes de la imagen pueden resultar más visibles si invertimos los colores.</p>
                                 <br>
                                 <code_example title="CÓDIGO FUENTE" lang="py">
@@ -297,6 +307,7 @@
                                 <div class="contenedor_img ">
                                     <img src="./images/proyecto3/6.png" class="imagen"   alt="Imagen-prueba">
                                 </div>
+                                <p class="img_descripcion"> <strong> Fig. 2.2.11</strong>  Imagen después de la inversión de color   </p>
                     </div>
                 </div>
                 <hr id="thread3" class="right">

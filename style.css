@@ -14,7 +14,9 @@
 body{
     background-color: var(--white);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* !progress indicator */
 #_progress {
     --scroll: 0%;
@@ -194,6 +196,17 @@ body{
     line-height: 150%;
 }
 /* !contenedores centrales */
+.img_descripcion{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+strong{
+    margin-right: 2px;
+}
 .contenedor-central{
     background: var(--blue);
     color: var(--white);
